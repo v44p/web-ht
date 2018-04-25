@@ -1,0 +1,16 @@
+extends ./layout.jade
+
+block contenido
+    h1 Contacto
+    form(action="/contact", method="POST")
+        div
+            label(for="nombre") Nombre
+            input(type="text", name="nombre", placeholder="Nombre", id="nombre")
+        div
+            label(for="email") Email
+            input(type="text", name="email", placeholder="Email", id="email")
+        div
+            label(for="mensaje") Mensaje
+            input(type="text", name="mensaje", placeholder="Mensaje", id="mensaje")
+        div
+            input(type="submit" value="Contactar" class="btn btn-info")
